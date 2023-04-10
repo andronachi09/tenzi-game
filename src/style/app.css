@@ -32,3 +32,27 @@ main {
     grid-template: auto auto / repeat(5, 1fr);
     gap: 30px;
 }
+
+.app--button{
+    height: 70px;
+    width: 120px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5035FF;
+    color: white;
+    margin-top: 100px;
+    margin-left: 70px;
+
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.app--button:focus{
+    outline: none;
+}
+
+.app--button:active{
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
