@@ -35,13 +35,14 @@ main {
 
 .app--button{
     height: 70px;
-    width: 120px;
+    width: 150px;
     border: none;
     border-radius: 6px;
     background-color: #5035FF;
     color: white;
     margin-top: 100px;
     margin-left: 70px;
+    cursor: pointer;
 
     font-family: 'Karla';
     font-style: normal;
@@ -55,4 +56,20 @@ main {
 
 .app--button:active{
     box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.app--title{
+    padding-left: 50px;
+    font-size: 40px;
+    margin: 0;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.app--instructions{
+    padding-left: 50px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
 }
