@@ -7,9 +7,9 @@ import Confetti from "react-confetti"
 export default function App(){
     const [dice, setDice] = useState(allNewDice())
     const [tenzies, setTenzies] = useState(false)
-    const diceElements = dice.map(die => 
-        <Die 
-            key={die.id} 
+    const diceElements = dice.map(die =>
+        <Die
+            key={die.id}
             value={die.value}
             isHeld={die.isHeld}
             holdDice={() => holdDice(die.id)}
@@ -28,7 +28,7 @@ export default function App(){
 
     function generateNewDie(){
         return{
-            value: Math.ceil(Math.random() * 6), 
+            value: Math.ceil(Math.random() * 6),
             isHeld: false,
             id: nanoid()
         }
@@ -51,7 +51,7 @@ export default function App(){
             setTenzies(false)
             setDice(allNewDice())
         }
-        
+
     }
 
     function holdDice(id){
@@ -68,8 +68,8 @@ export default function App(){
             <div className="app--dices">
                 {diceElements}
             </div>
-            <button 
-                onClick={rollDice} 
+            <button
+                onClick={rollDice}
                 className="app--button"
             >
                 {tenzies ? "New Game" : "Roll"}
